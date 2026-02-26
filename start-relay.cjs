@@ -10,6 +10,7 @@ const child = spawn('C:\\Users\\user\\.bun\\bin\\bun.exe', ['run', 'src\\relay.t
   env,
   cwd: 'C:\\Users\\user\\claude-telegram-relay',
   stdio: 'inherit',
+  windowsHide: true,
 });
 
 child.on('exit', (code) => process.exit(code ?? 0));
